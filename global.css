@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-yeon-sung: "Yeon Sung";
+  
+    /* font sizes */
+    --font-size-5xl: 32px;
+    --font-size-lgi: 22px;
+  
+    /* Colors */
+    --color-deepskyblue: #43c3fa;
+    --color-white: #fff;
+    --color-gainsboro-100: #e6e6e6;
+    --color-gainsboro-200: #e0e0e0;
+    --color-silver: #c7c7c7;
+    --color-black: #000;
+  
+    /* Paddings */
+    --padding-7xl: 26px;
+    --padding-2xs: 11px;
+    --padding-12xs: 1px;
+    --padding-lg: 18px;
+    
+  
+    /* Border radiuses */
+    --br-5xs: 8px;
+  
+    /* Effects */
+    --button-shadow: 0px 1px 2px rgb(87, 120, 218);
+  }
+
+  .suggestion-box {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 450%px;
+    overflow-y: auto;
+    width: 100%; /* Adjust based on input field padding */
+    z-index: 1000;
+    font-size: 22px;
+  }
+  
+  .suggestion {
+    padding: 2px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #f0f0f0;
+  }
+  
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./odd_page.css" />
+  <script defer src="./odd_page.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Yeon Sung:wght@400&display=swap"
+  />
+</head>
+<body>
+  <div class="root">
+    <div id="dayHeader" class="odd-day-events">odd_day_events</div>
+    <section class="day-container">
+      <div class="odd-day-photo">
+        <img id="day_image" alt="day_image" />
+      </div>
+      <div class="event-schedule">
+        <div class="morning-parent">
+          <div class="morning">Morning:</div>
+          <div id="morningEvent" class="morning-event"></div>
+        </div>
+        <div class="noon-parent">
+          <div class="noon">Afternoon:</div>
+          <div id="noonEvent" class="noon-event"></div>
+        </div>
+        <div class="evening-parent">
+          <div class="evening">Evening:</div>
+          <div id="eveningEvent" class="evening-event"></div>
+        </div>
+        <div class="button-wrapper">
+          <button id="previousButton" class="button-with-icon">
+            <svg class="icon-arrow-previous-thick" width="23.9" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 13.7772L11.3823 3V8.98734C25.6955 8.98734 27.3469 20.5761 26.9494 26.9494C26.3481 23.7345 26.0695 18.5671 11.3823 18.5671V24.5544L3 13.7772Z"
+              stroke="deepskyblue" stroke-width="5.73587" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="button-space"></div>
+          <button id="forwardButton" class="button-with-icon">
+            <svg class="icon-arrow-forward-thick" width="23.9" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27 13.7772L18.6177 3V8.98734C4.30454 8.98734 2.65306 20.5761 3.05065 26.9494C3.65192 23.7345 3.93046 18.5671 18.6177 18.5671V24.5544L27 13.7772Z"
+                stroke="deepskyblue" stroke-width="5.73587" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

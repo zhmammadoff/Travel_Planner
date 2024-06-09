@@ -1,0 +1,156 @@
+/* Root container styles */
+.root {
+  width: 100%;
+  height: 100vh; /* Full height */
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: 36px;
+  color: var(--color-deepskyblue);
+  font-family: var(--font-yeon-sung);
+  box-sizing: border-box;
+  padding: var(--padding-lg);
+}
+
+/* Frame parent styles */
+.frame-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% - 60px); /* Adjust height for buttons */
+  box-sizing: border-box;
+}
+
+/* Left and right section styles */
+.left-section,
+.right-section {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+}
+
+/* Header styles */
+.about_header {
+  margin: 0;
+  font-size: var(--font-size-5xl);
+  line-height: 150%;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  width: calc(100% - 40px);  /* Full width minus padding */
+  word-break: break-word;
+  z-index: 1;
+  padding: 120px 20px 50px 50px;  /* Padding left and right */
+}
+
+/* Description styles */
+.about_description {
+  width: calc(100% - 40px);  /* Full width minus padding */
+  height: auto;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+  mix-blend-mode: normal;
+  word-break: break-word;
+  z-index: 1;
+  font-size: var(--font-size-lgi);
+  padding: 0 20px 50px 50px;  /* Padding left and right */
+  margin-top: 80px;  /* Space between header and description */
+  text-align: justify;
+}
+
+/* Image styles */
+.frame-child {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Button wrapper styles */
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* Download icon styles */
+.icon-download,
+
+/* Button with icon styles */
+.button-with-icon {
+  background-color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Space between buttons styles */
+.button-space {
+  width: 36px; /* Space between the download icon and the button */
+}
+
+/* Forward button icon styles */
+
+.icon-arrow-forward-thick {
+  width: 23.9px;
+  height: 24px;
+}
+.icon_download{
+  width: 23.9px;
+  height: 24px;
+
+}
+
+/* Responsive styles */
+@media screen and (max-width: 100%) {
+  .root {
+    flex-wrap: wrap;
+    padding: var(--padding-lg);
+    box-sizing: border-box;
+  }
+  .frame-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-section, .right-section {
+    max-width: 100%;
+    text-align: justify;
+  }
+  .button-wrapper {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about_header {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .about_description {
+    font-size: 19px;
+    line-height: 29px;
+  }
+  .frame-child {
+    height: auto;
+    width: 100%;
+  }
+}

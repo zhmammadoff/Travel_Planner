@@ -1,0 +1,176 @@
+/* Root container styles */
+.root {
+  width: 100%;
+  position: relative;
+  background-color:var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 12px;
+  box-sizing: border-box;
+  gap: 50px;
+  line-height: normal;
+  letter-spacing: normal;
+  height: 100%;
+}
+
+/* Frame parent styles */
+.frame-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  text-align: center;
+  font-size: var(--font-size-lgi);
+  color: var(--color-deepskyblue);
+  font-family: var(--font-yeon-sung);
+  width: 100%;
+  height: 100%;
+}
+
+/* Additional Information wrapper and content */
+.Additional_Information-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 20px 0;
+  box-sizing: border-box;
+}
+
+.Additional_Information {
+  width: 100%;
+  max-width: 856px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 0 0 50px 0;
+  font-size: 36px;
+}
+
+/* Frame group styles */
+.frame-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+padding: 0 35px 0 35px;
+}
+
+.frame-1,
+.frame-2,
+.frame-3 {
+  height: 240px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Three detail parent styles */
+.three_detail-parent {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px 0 40px;
+}
+
+.Accommodation_preferences,
+.Transportation,
+.Budget {
+  width: 450px;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  word-break: break-word;
+  text-align: justify;
+  padding: 50px 0 0 0;
+  font-size: 28px;
+}
+
+/* Button wrapper styles */
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 1px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+}
+
+.button-with-icon {
+  background-color: var(--color-white); /* Your desired background color */
+  cursor: pointer; /* Optional: cursor style */
+  border: none; /* Optional: remove default button border */
+}
+
+.icon-arrow-previous-thick {
+  width: 23.9px;
+  height: 24px;
+  margin: 0 10px; /* Adjust spacing between buttons */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 100%) {
+  .frame-wrapper {
+    padding-left: var(--padding-20xl);
+    padding-right: var(--padding-20xl);
+    box-sizing: border-box;
+  }
+  .three_detail-parent {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .frame-parent {
+    gap: 38px;
+  }
+}
+
+@media screen and (max-width: 100%) {
+  .rectangle-parent {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 100%) {
+  .frame-group {
+    gap: 17px;
+  }
+  .frame-parent {
+    gap: var(--gap-lgi);
+  }
+  .root {
+    gap: 33px;
+    padding-left: var(--padding-22xl);
+    padding-right: var(--padding-22xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Accommodation_preferences,
+  .Transportation,
+  .Additional_Information,
+  .Budget {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .root {
+    gap: 23px;
+  }
+}

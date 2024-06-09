@@ -1,0 +1,201 @@
+.odd-day-photo {
+  width: 500px;
+  position: relative;
+  mix-blend-mode: normal;
+  order: 1;
+  display: flex;
+  height: 500px;
+  background-color: var(--color-white);
+  min-width: 500px;
+}
+.odd-day-events {
+    width: 100%; /* Full width */
+    line-height: 150%;
+    display: flex;
+    justify-content: flex-end; /* Align to the left */
+    order: 0;
+}
+.morning,
+.morning-event {
+  width: 100%;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  mix-blend-mode: normal;
+}
+.morning-event {
+  width: 100%;
+  text-align: justify;
+  max-height: 36px;
+  word-break: break-word;
+}
+.morning-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.noon,
+.noon-event {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  mix-blend-mode: normal;
+}
+.noon {
+  min-width: 108px;
+}
+.noon-event {
+  width: 100%;
+  text-align: justify;
+  max-height: 36px;
+  word-break: break-word;
+}
+.noon-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 6px;
+  gap: var(--gap-xs);
+}
+.evening,
+.evening-event {
+  width: 100%;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  mix-blend-mode: normal;
+}
+.evening-event {
+  width: 100%;
+  text-align: justify;
+  max-height: 36px;
+  word-break: break-word;
+}
+.evening-parent,
+.event-schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.evening-parent {
+  align-self: stretch;
+  gap: var(--gap-xs);
+}
+.event-schedule {
+  flex: 1;
+  gap: 116px;
+  min-width: 447px;
+  max-width: 100%;
+}
+.day-container,
+.root {
+  display: flex;
+  align-items: flex-start;
+  font-size: 22px;
+  color: var(--color-deepskyblue);
+  font-family: var(--font-yeon-sung);
+  
+}
+.day-container {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: 72px;
+  max-width: 100%;
+  text-align: left;
+  
+  
+}
+.root {
+  width: 100%;
+  position: relative;
+  background-color:var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 69px 83px 62px 91px;
+  box-sizing: border-box;
+  gap: 23px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  font-size: 36px;
+  
+}
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+}
+.button-with-icon,
+.icon-arrow-previous-thick,
+.icon-arrow-forward-thick {
+  width: 23.9px;
+  height: 24px;
+  margin: 0 10px; /* Adjust spacing between buttons */
+}
+.button-with-icon{
+  background-color: var(--color-white); /* Your desired background color */
+  cursor: pointer; /* Optional: cursor style */
+  border: none; /* Optional: remove default button border */
+}
+
+.button-space {
+  flex: 0.015; /* Fill remaining space between buttons */
+}
+@media screen and (max-width: 1150px) {
+  .odd-day-photo {
+    flex: 1;
+  }
+  .day-container {
+    flex-wrap: wrap;
+    gap: 36px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .odd-day-photo {
+    min-width: 100%;
+  }
+  .event-schedule {
+    gap: 58px;
+    min-width: 100%;
+  }
+  .day-container {
+    gap: 18px;
+  }
+  .root {
+    padding-left: 45px;
+    padding-right: 41px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .odd-day-events,
+  .evening,
+  .evening-event,
+  .morning,
+  .morning-event,
+  .noon,
+  .noon-event {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .event-schedule {
+    gap: 29px;
+  }
+  .root {
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+}
