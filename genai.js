@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "https://esm.sh/@google/generative-ai";
 // Replace 'YOUR_API_KEY' with your actual API key
-const API_KEY = AIzaSyBt90HRyaoFvcUJmxscuuNbWUV_nbuw-bU
+const API_KEY = 'AIzaSyBt90HRyaoFvcUJmxscuuNbWUV_nbuw-bU'
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 // Check if API_KEY is provided
