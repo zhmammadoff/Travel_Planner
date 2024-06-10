@@ -1,6 +1,8 @@
 import { parseAndStoreTravelGuide } from './variables.js';
 import generateTravelGuide from './genai.js'; // Importing generateTravelGuide function from genai.js
 import { generateAndStoreSvgPaths } from './image.js'; // Import the function from image.js
+require('dotenv').config();
+console.log(process.env);
 
 // Ensure the script runs after the HTML document has been completely loaded and parsed
 document.addEventListener('DOMContentLoaded', function() {
