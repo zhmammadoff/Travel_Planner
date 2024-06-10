@@ -3,12 +3,12 @@
 
 
 ## Features
-. Dynamic Input: Input your destination and the number of days you plan to stay.
-. Autocomplete Suggestions: Get instant suggestions as you type your destination, powered by the RapidAPI database.
-. Validation: Ensures accurate data entry by validating input fields.
-. Local Storage: Stores user input and generated content locally, allowing for seamless navigation and retrieval of information.
-. Google Generative AI Integration: Generates a comprehensive travel guide using Google's state-of-the-art Generative AI technology.
-. Interactive SVG Images: Visualize your trip with random SVG images for categories such as accommodation, budget, transportation, and daily activities.
+- Dynamic Input: Input your destination and the number of days you plan to stay.
+- Autocomplete Suggestions: Get instant suggestions as you type your destination, powered by the RapidAPI database.
+- Validation: Ensures accurate data entry by validating input fields.
+- Local Storage: Stores user input and generated content locally, allowing for seamless navigation and retrieval of information.
+- Google Generative AI Integration: Generates a comprehensive travel guide using Google's state-of-the-art Generative AI technology.
+- Interactive SVG Images: Visualize your trip with random SVG images for categories such as accommodation, budget, transportation, and daily activities.
 ## Usage
 1. Input Destination and Duration: Enter your destination and specify the number of days you plan to stay.
 2. Autocomplete Suggestions: As you type your destination, Travel Planner provides autocomplete suggestions to streamline the input process.
@@ -27,8 +27,8 @@
    Open the index.html file in your preferred web browser.
 
 ## Dependencies
-. Google Generative AI: Utilized for generating the travel guide content.
-. RapidAPI: Powers the autocomplete functionality by fetching city suggestions.
+- Google Generative AI: Utilized for generating the travel guide content.
+- RapidAPI: Powers the autocomplete functionality by fetching city suggestions.
 ## Contributing
    Contributions are welcome! If you have any suggestions, improvements, or feature requests, feel free to open an issue or submit a pull request.
 
