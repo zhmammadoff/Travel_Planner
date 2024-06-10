@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     async function fetchCities(query) {
-      const apiKey = process.env.autocomplete_APIKEY; // Replace with your RapidAPI key
+      const apiKey = '3b2d4fdb1amsh4e5ac75a1db0e61p11ffa5jsn35e4a4cdf945'; // Replace with your RapidAPI key
       const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${query}`;
   
       const options = {
